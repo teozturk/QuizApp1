@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="q1">1)Which City Is More Crowded?</string>
+    <string name="q1A">A)Tokyo, Japan</string>
+    <string name="q1B">B)Istanbul, Turkey</string>
+    <string name="q1C">C)Rio de Janeiro, Brazil</string>
+    <string name="q1D">D)São Paulo, Brazil</string>
+    <string name="q2">2)Which Cities Are In France?</string>
+    <string name="q2A">A)Nantes</string>
+    <string name="q2B">B)Salzburg</string>
+    <string name="q2C">C)Avignon</string>
+    <string name="q2D">D)Paris</string>
+    <string name="q3">3)Which Is The Largest Country In The World?</string>
+    <string name="hint3">Write Answer</string>
+    <string name="q4">4)Which Country Is This?</string>
+    <string name="btnTxt">FINISH</string>
+    <string name="wrongMes">Your Answer Is Wrong-Question </string>
+    <string name="ansMes">Please Answer Question </string>
+    <string name="btnTxt2">RESTART</string>
+</resources>
