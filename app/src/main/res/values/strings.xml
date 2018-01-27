@@ -17,4 +17,5 @@
     <string name="wrongMes">Your Answer Is Wrong-Question </string>
     <string name="ansMes">Please Answer Question </string>
     <string name="btnTxt2">RESTART</string>
+    <string name="btnTxt3">SHARE</string>
 </resources>

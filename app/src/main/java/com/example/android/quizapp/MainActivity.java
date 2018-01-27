@@ -26,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
     TextView textView01;
     Button button01, button02;
 
+    String score01;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         textView01 = (TextView) findViewById(R.id.quizScore);
         button01 = (Button) findViewById(R.id.fBTN);
         button02 = (Button) findViewById(R.id.rBTN);
+
 
     }
 
@@ -173,8 +177,8 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, ansMes + " 4", Toast.LENGTH_SHORT).show();
         }
 
-
-        textView01.setText("True Answer: " + trueAnswer + " False Answer: " + falseAnswer);
+        score01 = "True Answer: " + trueAnswer + " False Answer: " + falseAnswer;
+        textView01.setText(score01);
         textView01.setTextColor(Color.BLUE);
 
 
@@ -189,7 +193,15 @@ public class MainActivity extends AppCompatActivity {
         i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         finish();
         startActivity(i);
+    }
 
+    public void shareScore(View v) {
+
+        Intent sendIntent = new Intent();
+        sendIntent.setAction(Intent.ACTION_SEND);
+        sendIntent.putExtra(Intent.EXTRA_TEXT, "Hi My Quiz App Score " + score01);
+        sendIntent.setType("text/plain");
+        startActivity(sendIntent);
 
     }
 }
