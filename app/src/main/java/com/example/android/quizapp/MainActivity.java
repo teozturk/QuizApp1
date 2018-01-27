@@ -174,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-        textView01.setText("Your True Answer: " + trueAnswer + " Your False Answer: " + falseAnswer);
+        textView01.setText("True Answer: " + trueAnswer + " False Answer: " + falseAnswer);
         textView01.setTextColor(Color.BLUE);
 
 
